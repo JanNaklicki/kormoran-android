@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/tournamentImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/tournament_image"
+        app:srcCompat="@drawable/football" />
+
+    <TextView
+        android:id="@+id/tournamentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/tournamentImage"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        tools:text="Tournament_name" />
+
+    <TextView
+        android:id="@+id/tournamentState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tournamentName"
+        android:layout_below="@+id/tournamentName"
+        android:layout_marginTop="10dp"
+        android:text="Tournament_name"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <ImageView
+        android:id="@+id/tournamentStateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tournamentState"
+        android:layout_toEndOf="@+id/tournamentState"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/filled_circle" />
+</RelativeLayout>
